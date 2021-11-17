@@ -1,10 +1,13 @@
 const express = require("express");
-const click = require("./click");
+const Info = require("./Info");
 const router = express.Router();
 
 router.route("/").get(async (req, res)=>{
-    const data = await click.findById("618a9c71fa4e5f0060363056");
+    const data = await Info.findById("618bfe3afed608c940fa6409");
     res.json(data.clicks);
+}).put(async (req, res) => { 
+    const  
+
 });
 
 module.exports = router;
